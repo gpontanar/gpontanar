@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a34281940.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Portfolio_transparent.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Web Designer / Wordpress Specialist</p>
+                <h1>Hi, I'm <span>Grace Pontanar</span><br>from the Philippines</h1>
+            </div>    
+        </div>  
+    </div>  
+  <!-----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/20231014_195018.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With a decade-long tenure as a Senior Technical Support professional, I bring extensive experience in troubleshooting WordPress website issues to the table. Throughout my tenure, I've honed my skills in diagnosing and resolving various technical challenges, ensuring seamless functioning and optimal performance of WordPress sites.
+
+                        Driven by a passion for web development, I made the decision to transition from my role in technical support to pursue a more hands-on approach in web development. This shift allows me to align my time and energy more closely with my professional aspirations and creative interests. By managing my time independently, I can delve deeper into the realms of web development, exploring innovative solutions and pushing the boundaries of what's possible in the digital landscape.
+                        
+                        My journey from Senior Technical Support to focusing on web development reflects my commitment to personal and professional growth, as well as my unwavering dedication to cultivating skills that contribute to the ever-evolving field of technology. I look forward to leveraging my diverse background and expertise to create impactful digital experiences and solutions in the realm of web development.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>Designing Web/App Interface</li>
+                                <li><span>Wordpress Specialist</span><br>Troubleshoot Wordpress Website Issues</li>
+                                <li><span>DNS Specialist</span><br>Troubleshooting/Resolves Domain DNS issues</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Year 2014 - 2024: 10 Years Senior Technical Support / SME</span><br>As a Senior Technical Support specialist, I've navigated intricate technical landscapes, particularly focusing on troubleshooting WordPress website issues. My role involved delving deep into the intricacies of WordPress platforms, diagnosing issues, and implementing effective solutions to ensure optimal performance and user experience. Additionally, I've played a pivotal role in mentoring and training junior support members, fostering a collaborative environment focused on continuous improvement and knowledge sharing.</li>
+                                <li><span>Year 2014 - 2024: Troubleshooting Wordpress Website issues</span><br>Fixed hundreds of Wordpress Websites for the customer after updating their plugins/themes or after php update.</li>
+                                <li><span>Year 2024 - 2025: Web Development </span><br>Built a website Portfolio for the customer using html, css and Javascript. Built Website using CMS applications as well such as Wordpress and customize plugins using CSS.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>March 28, 2015 - (BSIT) College Graduate at STI Cebu </span><br> Bachelor of Science and Information Technology </li>
+                                <li><span>April 15, 2005 - High School Graduate</span><br>Camp Lapu-lapu National School</li>
+                                <li><span>March 20, 2001 - Elementary Graduate</span><br>Camp Lapu-lapu Elementary School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+ <!-----------services------------>
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-wordpress"></i>
+                <h2>Wordpress Website Issues</h2>
+                <p>Diagnosing and resolving a wide range of WordPress website issues promptly and efficiently.<br>
+                    Expertise in troubleshooting common issues such as plugin conflicts, theme compatibility issues, CSS/HTML errors, and database inconsistencies.<br>
+                    Identifying and addressing performance bottlenecks to enhance website speed and responsiveness.<br>
+                    Ensuring website security by identifying and patching vulnerabilities, and implementing robust security measures.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Diagnosing and resolving a wide range of WordPress website issues promptly and efficiently.<br>
+                    Expertise in troubleshooting common issues such as plugin conflicts, theme compatibility issues, CSS/HTML errors, and database inconsistencies.<br>
+                    Identifying and addressing performance bottlenecks to enhance website speed and responsiveness.<br>
+                    Ensuring website security by identifying and patching vulnerabilities, and implementing robust security measures.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>DNS Configuration</h2>
+                <p>Are you looking to streamline your online presence and ensure seamless connectivity to your website? Look no further than our expert DNS configuration services. With our comprehensive expertise in Domain Name System (DNS) management, we offer tailored solutions to optimize your website's performance, security, and reliability.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-----------Portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/5.PNG">
+                <div class="layer">
+                    <h3>Client's Web Development Testimony</h3>
+                    <p>I recently had the pleasure of working with Grace on building my website using the WordPress CMS application, and I couldn't be more impressed with the results. Grace demonstrated exceptional expertise and professionalism throughout the entire process.
+
+                        From the initial consultation to the final launch, Grace was attentive to my needs and preferences, ensuring that the website reflected my vision and objectives. Their attention to detail and creative flair brought my ideas to life in ways I hadn't imagined.
+                        
+                        Not only was the website beautifully designed and user-friendly, but it also exceeded my expectations in terms of functionality and performance. Thanks to Grace's expertise, my online presence has been significantly enhanced, and I've received numerous compliments from visitors to the site.
+                        
+                        Furthermore, Grace was a pleasure to work with, always communicative, responsive, and dedicated to delivering outstanding results. Their professionalism and commitment to customer satisfaction were truly commendable.
+                        
+                        I wholeheartedly recommend Grace to anyone in need of website design and development services. Their talent, expertise, and dedication make them an invaluable asset to any project."</p>
+                        <a href="#"><i class="fa-solid fa-award"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/6.PNG">
+                <div class="layer">
+                    <h3>Client's Web Development Testimony</h3>
+                    <p>I recently had the pleasure of working with Grace on building my website using the WordPress CMS application, and I couldn't be more impressed with the results. Grace demonstrated exceptional expertise and professionalism throughout the entire process.
+
+                        From the initial consultation to the final launch, Grace was attentive to my needs and preferences, ensuring that the website reflected my vision and objectives. Their attention to detail and creative flair brought my ideas to life in ways I hadn't imagined.
+                        
+                        Not only was the website beautifully designed and user-friendly, but it also exceeded my expectations in terms of functionality and performance. Thanks to Grace's expertise, my online presence has been significantly enhanced, and I've received numerous compliments from visitors to the site.
+                        
+                        Furthermore, Grace was a pleasure to work with, always communicative, responsive, and dedicated to delivering outstanding results. Their professionalism and commitment to customer satisfaction were truly commendable.
+                        
+                        I wholeheartedly recommend Grace to anyone in need of website design and development services. Their talent, expertise, and dedication make them an invaluable asset to any project."</p>
+                        <a href="#"><i class="fa-solid fa-award"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/7.PNG">
+                <div class="layer">
+                    <h3>Client's Web Development Testimony</h3>
+                    <p>I recently had the pleasure of working with Grace on building my website using the WordPress CMS application, and I couldn't be more impressed with the results. Grace demonstrated exceptional expertise and professionalism throughout the entire process.
+
+                        From the initial consultation to the final launch, Grace was attentive to my needs and preferences, ensuring that the website reflected my vision and objectives. Their attention to detail and creative flair brought my ideas to life in ways I hadn't imagined.
+                        
+                        Not only was the website beautifully designed and user-friendly, but it also exceeded my expectations in terms of functionality and performance. Thanks to Grace's expertise, my online presence has been significantly enhanced, and I've received numerous compliments from visitors to the site.
+                        
+                        Furthermore, Grace was a pleasure to work with, always communicative, responsive, and dedicated to delivering outstanding results. Their professionalism and commitment to customer satisfaction were truly commendable.
+                        "</p>
+                        <a href="#"><i class="fa-solid fa-award"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------Contact form------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>gracepontanar@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>09224832991</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100007608827263"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/MNL2024.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024. Made with <i class="fa-solid fa-heart"></i> and passion by Gracias Gracie</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxc6miy1pwKxvnXPru8443BRyAxkD6hSzg0HtXzEYzQQyWIbb2nLZN0vZSZ6wDCQ-Atrw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
