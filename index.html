@@ -6,6 +6,7 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5a34281940.js" crossorigin="anonymous"></script>
+    <!------<script src="script.js"></script> -------->
 </head>
 <body>
     <div id="header">
@@ -48,6 +49,7 @@
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links"onclick="opentab('experience')">Experience</p>
                             <p class="tab-links"onclick="opentab('education')">Education</p>
+                            <p class="tab-links"onclick="opentab('certification')">Certificate of competency</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
@@ -68,6 +70,31 @@
                                 <li><span>March 28, 2015 - (BSIT) College Graduate at STI Cebu </span><br> Bachelor of Science and Information Technology </li>
                                 <li><span>April 15, 2005 - High School Graduate</span><br>Camp Lapu-lapu National School</li>
                                 <li><span>March 20, 2001 - Elementary Graduate</span><br>Camp Lapu-lapu Elementary School</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certification">
+                            <ul>
+                                <li><span>Most Improved Agent of Fasthosts Customer Support
+                                Of May 2015</span><br>Awarded on 15th of July 2015</li>
+                                <li><span>The UK Web Hosting Agent with the Highest NPS (Net Promoter Scores)</span><br>For the month of June, July and August 2016
+                                <br>Awarded on 9th of September 2016</li>
+                                <li><span>The Top Overall Fasthosts Agent Year 2018</span><br>For the month of April,  August,  November,  December</li>
+                                <li><span>The Best In Quality Fasthosts Agent Year 2018</span><br>For the month of August,  September,   November, December </li>
+                                <li><span>The Top Fasthosts Sales After Support Agent</span><br>For the month of November 2018</li>
+                                <li><span>The Most Productive Fasthosts Agent Year 2018</span><br></li>
+                                <li><span>The Top Overall Fasthosts Agent</span><br>For the entire year 2018</li>
+                                <li><span>The Top Overall Fasthosts Agent Year 2019</span><br>For the month of January,  February,  March,   May</li>
+                                <li><span>The Best In Quality Fasthosts Agent Year 2019</span><br>For the month of February,  March,  May</li>
+                                <li><span>The Top Fasthosts Agent</span><br>Average Hit Percentage: 112.33% <br>For the 1st Quarter of 2019</li>
+                                <li><span>The Top Overall Fasthosts Agent</span><br>For the entire year 2019</li>
+                                <li><span>The Top Overall Fasthosts Agent Year 2020</span><br>For the month of March,  April,  November</li>
+                                <li><span>The Best In Quality Fasthosts Agent Year 2020</span><br>For the month of April,  September, November</li>
+                                <li><span>The Most Productive Fasthosts Agent</span><br>For the month of November, 2020</li>
+                                <li><span>The Best In Quality Fasthosts Agent Year 2021</span><br>For the month of January, February, April, May</li>
+                                <li><span>The Top Overall Fasthosts Agent 2021</span><br>For the month of April, 2021</li>
+                                <li><span>The Most Productive Fasthosts Agent</span><br>For the month of May, 2021</li>
+                                <li><span>The Top Overall Fasthosts Agent</span><br>For the month of February, 2022</li>
+                                <li><span>The Top Overall Fasthosts SME  (Subject Matter Expert)</span><br>For the year, 2023</li>
                             </ul>
                         </div>
                 </div>
@@ -140,6 +167,33 @@
     </div>
 </div>
 
+<!-----------Slide Show------------>
+<div class="container">
+<h1 class="sub-title">Certificate of competency</h1>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="Images/IMG_0190.JPG.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/IMG_0192.JPG.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/IMG_0193.JPG.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
 <!-----------Contact form------------>
 <div id="contact">
     <div class="container">
@@ -216,5 +270,46 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+ 
+<!-----------JS script slideshow------------>
+
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+    
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+    
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+        slides[slideIndex - 1].style.display = "block";  
+        dots[slideIndex - 1].className += " active";
+    }
+
+        // Optional: Automatic slideshow
+        setInterval(() => {
+        plusSlides(1);
+        }, 3000); // Change image every 3 seconds
+    </script>
 </body>
 </html>

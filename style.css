@@ -65,12 +65,14 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: #eb6d95;
 
 }
 
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    color: #eb6d95;
 }
 
 .header-text h1 span{
@@ -411,5 +413,83 @@ nav .fa-solid{
     display: block;
 }
 
+/*--------------------CSS for Slideshow --------------------*/
+#certifications{
+    padding: 30px 0;
+    text-align: center;
+}
+.certification ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.certification  ul li span{
+    color: #eb6d95;
+    font-size: 14px;
+}
+
+.certification.active-tab{
+    display: block;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+* {
+    box-sizing: border-box;
+    }
+
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #ff004f;
+}
 
 
